@@ -1,0 +1,9 @@
+syms s m1 m2 k1 k2 X1 X2 F
+
+A = [(m1*s^2 + k1 + k2) -k2; -k2 (k2 + m2*s^2)];
+B = [X1; X2];
+C = [0; F];
+B = inv(A)*C;
+
+G = B(2)/F;
+pretty(G)
