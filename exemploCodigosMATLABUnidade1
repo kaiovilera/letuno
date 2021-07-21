@@ -1,3 +1,10 @@
+%% Aplicando a transformada de Laplace
+syms t
+f=2*t^2;
+F=laplace(f);
+F=simplify(F);
+pretty(F)
+
 %% Transformada Inversa de Laplace
 syms s
 f=ilaplace(2/((s+1)*(s+2)^2));
