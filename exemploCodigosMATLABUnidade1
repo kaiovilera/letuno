@@ -1,0 +1,4 @@
+%% Transformada Inversa de Laplace
+syms s
+f=ilaplace(2/((s+1)*(s+2)^2));
+pretty(f)
