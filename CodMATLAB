@@ -1,10 +1,10 @@
 %% Código para determinar função de transferência usando matrizes
 syms s m1 m2 k1 k2 X1 X2 F
 
-A = [(m1*s^2 + k1 + k2) -k2; -k2 (k2 + m2*s^2)];
+A = [(m1*s^2 + k1 + k2) -k2; -k2 (k2 + m2*s^2)]; % matriz 2x2 (duas linhas e duas colunas - linhas separadas por ; e colunas por espaço)
 B = [X1; X2];
 C = [0; F];
-B = inv(A)*C;
+B = inv(A)*C; % Determina X1 e X2
 
-G = B(2)/F;
+G = B(2)/F; % Manipulação matemática para obter o resultado pretendido.
 pretty(G)
